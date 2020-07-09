@@ -1,0 +1,17 @@
+@import "_reset.scss";
+@import "_variables.scss";
+.container {
+  margin: 0 auto;
+  max-width: 1116px;
+}
+.container {
+  outline: none !important;
+}
+body {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+}
+@import "_slider.scss";
+@import "_header.scss";
+@import "_main.scss";

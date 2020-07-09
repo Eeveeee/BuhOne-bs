@@ -1,0 +1,51 @@
+.main {
+  z-index: 1;
+  position: relative;
+  background: url(../img/main/background.png) center no-repeat;
+  background-size: cover;
+  &::after {
+    z-index: 2;
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  &__blocks {
+    padding: 170px 0 113px 0;
+    position: relative;
+    z-index: 3;
+  }
+  &__header {
+    margin-bottom: 80px;
+    color: $text-color-light;
+    max-width: 589px;
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 66px;
+  }
+  &-button {
+    background: $main-blue;
+    color: #ffffff;
+    padding: 20px 65px;
+    margin-bottom: 70px;
+    font-size: 18px;
+  }
+  &-slider {
+    position: relative;
+  }
+}
+@media (max-width: 480px) {
+  .main {
+    &__header {
+      font-size: 30px;
+    }
+    &__blocks {
+      padding: 70px 0 70px 0;
+    }
+  }
+}
