@@ -1,0 +1,97 @@
+.about {
+  &__blocks {
+    padding: 140px 0 110px 0;
+  }
+  &__text {
+    span {
+      color: $main-blue;
+      font-size: 24px;
+      font-weight: 700;
+    }
+    p {
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 25px;
+    }
+  }
+  &__header {
+    margin-bottom: 60px;
+    color: $main-blue;
+    span {
+      color: $header-color;
+    }
+  }
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 80px;
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 100px 0 40px;
+    font-weight: 700;
+    width: 255px;
+    height: 255px;
+    transition: all 0.3s;
+    margin-bottom: 30px;
+    background: $background-color-grey;
+    font-size: 14px;
+    span {
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 55px;
+    }
+    a {
+      cursor: pointer;
+      color: $main-blue;
+      text-decoration: underline;
+      margin-top: 47px;
+    }
+    &:hover {
+      background: $main-blue;
+      color: $text-color-light !important;
+      a {
+        color: $text-color-light;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .about {
+    &__blocks {
+      padding: 70px 0 55px 0;
+    }
+    &__text {
+      text-align: center;
+      p {
+        margin-bottom: 10px;
+      }
+    }
+    &__cards {
+      justify-content: space-around;
+      padding: 0;
+    }
+    &__card {
+      text-align: center;
+      padding: 0;
+      &:hover {
+        color: $text-color-dark !important;
+        background: $background-color-grey;
+        a {
+          color: $main-blue;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .about {
+    &__cards {
+      padding-left: 20px;
+    }
+  }
+}

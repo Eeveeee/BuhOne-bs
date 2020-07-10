@@ -1,0 +1,60 @@
+.services {
+  background: $background-color-grey;
+  &__blocks {
+    padding: 140px 0;
+  }
+  &__header {
+    font-weight: 700;
+    font-size: 24px;
+    color: $main-blue;
+    h2 {
+      margin-top: 40px;
+      margin-bottom: 72px;
+    }
+  }
+  &__card {
+    margin-top: 30px;
+    max-width: 100%;
+    padding: 0 0 45px 45px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    z-index: 1;
+    width: 350px;
+    height: 360px;
+    background: url(../img/services/background.jpg);
+    &::after {
+      z-index: 2;
+      position: absolute;
+      content: "";
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.65);
+    }
+    span {
+      max-width: 187px;
+      color: $text-color-light;
+      line-height: 30px;
+      font-weight: 700;
+      font-size: 24px;
+      z-index: 3;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .services {
+    &__blocks {
+      padding: 80px 0;
+    }
+    &__header {
+      text-align: center;
+    }
+    &__card {
+      padding: 0;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

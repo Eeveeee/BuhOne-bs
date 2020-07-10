@@ -16,6 +16,7 @@
     font-weight: 900;
   }
   &-contacts {
+    user-select: text;
     display: flex;
     justify-content: space-between;
     margin-bottom: 22px;

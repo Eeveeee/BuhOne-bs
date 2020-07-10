@@ -22,11 +22,11 @@
     margin-bottom: 80px;
     color: $text-color-light;
     max-width: 589px;
-    font-family: Merriweather;
     font-style: normal;
-    font-weight: bold;
-    font-size: 48px;
     line-height: 66px;
+    font-size: 48px;
+    font-weight: 900;
+    font-family: "Merriweather", serif;
   }
   &-button {
     background: $main-blue;

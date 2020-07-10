@@ -8,10 +8,25 @@
   outline: none !important;
 }
 body {
-  font-family: Lato;
+  font-family: $font-lato;
+  font-weight: 700;
   font-style: normal;
   font-weight: normal;
 }
+h2 {
+  font-size: 48px;
+  font-weight: 900;
+  font-family: $font-merriweather;
+  color: $header-color;
+}
+@media (max-width: 480px) {
+  h2 {
+    font-size: 24px;
+  }
+}
+
 @import "_slider.scss";
 @import "_header.scss";
 @import "_main.scss";
+@import "_services.scss";
+@import "_about.scss";

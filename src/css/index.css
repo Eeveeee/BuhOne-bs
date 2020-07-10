@@ -165,9 +165,23 @@ img {
 }
 
 body {
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
   font-style: normal;
   font-weight: normal;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 900;
+  font-family: "Merriweather", serif;
+  color: #333333;
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 24px;
+  }
 }
 
 .slick-track {
@@ -286,6 +300,7 @@ body {
 }
 
 .header-contacts {
+  user-select: text;
   display: flex;
   justify-content: space-between;
   margin-bottom: 22px;
@@ -367,11 +382,11 @@ body {
   margin-bottom: 80px;
   color: #ffffff;
   max-width: 589px;
-  font-family: Merriweather;
   font-style: normal;
-  font-weight: bold;
-  font-size: 48px;
   line-height: 66px;
+  font-size: 48px;
+  font-weight: 900;
+  font-family: "Merriweather", serif;
 }
 
 .main-button {
@@ -392,6 +407,174 @@ body {
   }
   .main__blocks {
     padding: 70px 0 70px 0;
+  }
+}
+
+.services {
+  background: #ebebeb;
+}
+
+.services__blocks {
+  padding: 140px 0;
+}
+
+.services__header {
+  font-weight: 700;
+  font-size: 24px;
+  color: #005fa3;
+}
+
+.services__header h2 {
+  margin-top: 40px;
+  margin-bottom: 72px;
+}
+
+.services__card {
+  margin-top: 30px;
+  max-width: 100%;
+  padding: 0 0 45px 45px;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  z-index: 1;
+  width: 350px;
+  height: 360px;
+  background: url(../img/services/background.jpg);
+}
+
+.services__card::after {
+  z-index: 2;
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.services__card span {
+  max-width: 187px;
+  color: #ffffff;
+  line-height: 30px;
+  font-weight: 700;
+  font-size: 24px;
+  z-index: 3;
+}
+
+@media (max-width: 480px) {
+  .services__blocks {
+    padding: 80px 0;
+  }
+  .services__header {
+    text-align: center;
+  }
+  .services__card {
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.about__blocks {
+  padding: 140px 0 110px 0;
+}
+
+.about__text span {
+  color: #005fa3;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.about__text p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.about__header {
+  margin-bottom: 60px;
+  color: #005fa3;
+}
+
+.about__header span {
+  color: #333333;
+}
+
+.about__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 80px;
+}
+
+.about__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 100px 0 40px;
+  font-weight: 700;
+  width: 255px;
+  height: 255px;
+  transition: all 0.3s;
+  margin-bottom: 30px;
+  background: #ebebeb;
+  font-size: 14px;
+}
+
+.about__card span {
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 55px;
+}
+
+.about__card a {
+  cursor: pointer;
+  color: #005fa3;
+  text-decoration: underline;
+  margin-top: 47px;
+}
+
+.about__card:hover {
+  background: #005fa3;
+  color: #ffffff !important;
+}
+
+.about__card:hover a {
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .about__blocks {
+    padding: 70px 0 55px 0;
+  }
+  .about__text {
+    text-align: center;
+  }
+  .about__text p {
+    margin-bottom: 10px;
+  }
+  .about__cards {
+    justify-content: space-around;
+    padding: 0;
+  }
+  .about__card {
+    text-align: center;
+    padding: 0;
+  }
+  .about__card:hover {
+    color: #000 !important;
+    background: #ebebeb;
+  }
+  .about__card:hover a {
+    color: #005fa3;
+  }
+}
+
+@media (max-width: 1024px) {
+  .about__cards {
+    padding-left: 20px;
   }
 }
 /*# sourceMappingURL=index.css.map */
