@@ -402,7 +402,7 @@ h2 {
 .main {
   z-index: 1;
   position: relative;
-  background: url(../img/main/background.png) center no-repeat;
+  background: url(../img/main/background.webp) center no-repeat;
   background-size: cover;
 }
 
@@ -805,7 +805,7 @@ h2 {
 .contacts {
   z-index: 1;
   position: relative;
-  background: url(../img/main/background.png) center no-repeat;
+  background: url(../img/main/background.webp) center no-repeat;
   background-size: cover;
 }
 
