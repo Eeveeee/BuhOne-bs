@@ -1,0 +1,62 @@
+.clients {
+  background: $background-color-grey;
+  &__blocks {
+    padding: 100px 0;
+  }
+  &__header {
+    font-weight: 300;
+    font-size: 24px;
+    color: $main-blue;
+    h2 {
+      margin-top: 40px;
+    }
+  }
+  &-slider {
+    position: relative;
+    margin-top: 60px;
+    .slick-dots {
+      button {
+        background: rgba($color: $main-blue, $alpha: 0.4);
+      }
+      .slick-active {
+        button {
+          background: $main-blue;
+        }
+      }
+    }
+    .slick-list {
+      margin-bottom: 50px;
+    }
+    .slick-prev {
+      background: $main-blue url(../img/icons/arrow-back.svg) center no-repeat;
+      &:hover {
+        background: rgba($color: $main-blue, $alpha: 0.4) url(../img/icons/arrow-back.svg) center no-repeat;
+      }
+    }
+    .slick-next {
+      background: $main-blue url(../img/icons/arrow-next.svg) center no-repeat;
+      &:hover {
+        background: rgba($color: $main-blue, $alpha: 0.4) url(../img/icons/arrow-next.svg) center no-repeat;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .clients__header {
+    text-align: center;
+  }
+  .clients-slider {
+    .slick {
+      &-next {
+        &:hover {
+          background: $main-blue url(../img/icons/arrow-next.svg) center no-repeat !important;
+        }
+      }
+      &-prev {
+        &:hover {
+          background: $main-blue url(../img/icons/arrow-back.svg) center no-repeat !important;
+        }
+      }
+    }
+  }
+}

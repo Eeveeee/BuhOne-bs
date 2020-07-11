@@ -7,13 +7,14 @@
   }
   &-arrow {
     position: absolute;
+    cursor: pointer;
+    z-index: 3;
+    transition: 0.3s;
     bottom: 0;
     right: 0;
     width: 60px;
     height: 60px;
     font-size: 0;
-    z-index: 3;
-    cursor: pointer;
   }
   &-dots {
     max-width: 160px;
@@ -63,6 +64,14 @@
   .slider {
     .slick-prev {
       right: 8.1%;
+      &:hover {
+        background: rgba(255, 255, 255, 0.2) url(../img/icons/arrow-back.svg) center no-repeat;
+      }
+    }
+    .slick-next {
+      &:hover {
+        background: rgba(255, 255, 255, 0.2) url(../img/icons/arrow-next.svg) center no-repeat;
+      }
     }
   }
 }

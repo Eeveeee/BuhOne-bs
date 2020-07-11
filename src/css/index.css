@@ -194,13 +194,14 @@ h2 {
 
 .slick-arrow {
   position: absolute;
+  cursor: pointer;
+  z-index: 3;
+  transition: 0.3s;
   bottom: 0;
   right: 0;
   width: 60px;
   height: 60px;
   font-size: 0;
-  z-index: 3;
-  cursor: pointer;
 }
 
 .slick-dots {
@@ -257,6 +258,12 @@ h2 {
 @media (max-width: 768px) {
   .slider .slick-prev {
     right: 8.1%;
+  }
+  .slider .slick-prev:hover {
+    background: rgba(255, 255, 255, 0.2) url(../img/icons/arrow-back.svg) center no-repeat;
+  }
+  .slider .slick-next:hover {
+    background: rgba(255, 255, 255, 0.2) url(../img/icons/arrow-next.svg) center no-repeat;
   }
 }
 
@@ -575,6 +582,69 @@ h2 {
 @media (max-width: 1024px) {
   .about__cards {
     padding-left: 20px;
+  }
+}
+
+.clients {
+  background: #ebebeb;
+}
+
+.clients__blocks {
+  padding: 100px 0;
+}
+
+.clients__header {
+  font-weight: 300;
+  font-size: 24px;
+  color: #005fa3;
+}
+
+.clients__header h2 {
+  margin-top: 40px;
+}
+
+.clients-slider {
+  position: relative;
+  margin-top: 60px;
+}
+
+.clients-slider .slick-dots button {
+  background: rgba(0, 95, 163, 0.4);
+}
+
+.clients-slider .slick-dots .slick-active button {
+  background: #005fa3;
+}
+
+.clients-slider .slick-list {
+  margin-bottom: 50px;
+}
+
+.clients-slider .slick-prev {
+  background: #005fa3 url(../img/icons/arrow-back.svg) center no-repeat;
+}
+
+.clients-slider .slick-prev:hover {
+  background: rgba(0, 95, 163, 0.4) url(../img/icons/arrow-back.svg) center no-repeat;
+}
+
+.clients-slider .slick-next {
+  background: #005fa3 url(../img/icons/arrow-next.svg) center no-repeat;
+}
+
+.clients-slider .slick-next:hover {
+  background: rgba(0, 95, 163, 0.4) url(../img/icons/arrow-next.svg) center no-repeat;
+}
+
+@media (max-width: 768px) {
+  .clients__header {
+    text-align: center;
+  }
+  .clients-slider .slick-next:hover {
+    background: #005fa3 url(../img/icons/arrow-next.svg) center no-repeat !important;
+  }
+  .clients-slider .slick-prev:hover {
+    background: #005fa3 url(../img/icons/arrow-back.svg) center no-repeat !important;
   }
 }
 /*# sourceMappingURL=index.css.map */
