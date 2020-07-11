@@ -244,14 +244,17 @@ h2 {
 }
 
 .slick-dots li {
+  overflow: hidden;
   list-style: none;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
 }
 
 .slick-dots button {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
+  padding: 0;
+  width: 100%;
+  height: 100%;
   background: rgba(255, 255, 255, 0.4);
 }
 
@@ -295,6 +298,10 @@ h2 {
   }
   .slider .slick-next:hover {
     background: rgba(255, 255, 255, 0.2) url(../img/icons/arrow-next.svg) center no-repeat;
+  }
+  .slider .slick-dots li {
+    width: 20px;
+    height: 20px;
   }
 }
 
@@ -798,7 +805,7 @@ h2 {
 .contacts {
   z-index: 1;
   position: relative;
-  background: url(../img/contacts/background.png) center no-repeat;
+  background: url(../img/main/background.png) center no-repeat;
   background-size: cover;
 }
 

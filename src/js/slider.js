@@ -37,14 +37,11 @@ $(document).ready(function () {
     speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
     easing: "ease",
     responsive: [
       {
         breakpoint: 480,
         settings: {
-          autoplay: false,
           arrows: false,
         },
       },
