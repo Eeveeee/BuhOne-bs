@@ -1,5 +1,6 @@
 @import "_reset.scss";
 @import "_variables.scss";
+@import "_buttons.scss";
 .container {
   margin: 0 auto;
   max-width: 1116px;
@@ -31,3 +32,6 @@ h2 {
 @import "_services.scss";
 @import "_about.scss";
 @import "_clients.scss";
+@import "_reviews.scss";
+@import "_contacts.scss";
+@import "_footer.scss";

@@ -1,0 +1,20 @@
+.button {
+  transition: 0.3s;
+  background: $main-blue;
+  color: $text-color-light;
+  padding: 20px 65px;
+  margin-bottom: 70px;
+  font-size: 18px;
+  &:hover {
+    color: darken($color: $text-color-light, $amount: 15);
+    background: lighten($color: $main-blue, $amount: 10);
+  }
+}
+@media (max-width: 768px) {
+  .button {
+    &:hover {
+      background: $main-blue;
+      color: $text-color-light;
+    }
+  }
+}

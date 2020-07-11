@@ -1,0 +1,119 @@
+.reviews {
+  &__blocks {
+    padding: 140px 0;
+  }
+  &__header {
+    color: $main-blue;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    h2 {
+      margin-top: 40px;
+    }
+  }
+  &-slider {
+    position: relative;
+    margin-top: 80px;
+    .slick-dots {
+      button {
+        background: rgba($color: $main-blue, $alpha: 0.4);
+      }
+      .slick-active {
+        button {
+          background: $main-blue;
+        }
+      }
+    }
+    .slick-list {
+      margin-bottom: 100px;
+    }
+    .slick-prev {
+      background: $main-blue url(../img/icons/arrow-back.svg) center no-repeat;
+      &:hover {
+        background: rgba($color: $main-blue, $alpha: 0.4) url(../img/icons/arrow-back.svg) center no-repeat;
+      }
+    }
+    .slick-next {
+      background: $main-blue url(../img/icons/arrow-next.svg) center no-repeat;
+      &:hover {
+        background: rgba($color: $main-blue, $alpha: 0.4) url(../img/icons/arrow-next.svg) center no-repeat;
+      }
+    }
+    .slider__item {
+      padding: 35px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      background: $background-color-grey;
+      p {
+        margin-bottom: 58px;
+        color: $text-color-dark;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 25px;
+      }
+      .reviews__client {
+        max-width: 320px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .client {
+          &-img-wrap {
+            width: 80px;
+            height: 80px;
+          }
+          &-info {
+            display: flex;
+            flex-direction: column;
+            b {
+              margin-bottom: 10px;
+              font-weight: 900;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .reviews {
+    &__header {
+      text-align: center;
+    }
+    &-slider {
+      .slick-prev {
+        right: 8.1%;
+        &:hover {
+          background: $main-blue url(../img/icons/arrow-back.svg) center no-repeat;
+        }
+      }
+      .slick-next {
+        &:hover {
+          background: $main-blue url(../img/icons/arrow-next.svg) center no-repeat;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .reviews {
+    &__blocks {
+      padding: 50px 0;
+    }
+    &-slider {
+      margin-top: 40px;
+      .slider__item {
+        p {
+          margin-bottom: 20px;
+        }
+      }
+      .slick-list {
+        margin-bottom: 50px;
+      }
+    }
+    &__client {
+      flex-direction: column;
+    }
+  }
+}

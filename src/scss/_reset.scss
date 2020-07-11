@@ -156,3 +156,13 @@ button {
 img {
   max-width: 100%;
 }
+form {
+  input,
+  textarea {
+    border: none;
+    outline: none;
+  }
+}
+textarea {
+  resize: none;
+}
