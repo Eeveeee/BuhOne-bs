@@ -41,7 +41,10 @@
   }
 }
 .slider {
+  min-width: 0;
   user-select: none;
+  border: none;
+  outline: none;
   .slick-prev {
     background: rgba(255, 255, 255, 0.2) url(../img/icons/arrow-back.svg) center no-repeat;
     right: 5.5%;
@@ -55,6 +58,10 @@
       background: rgba(255, 255, 255, 0.5) url(../img/icons/arrow-next.svg) center no-repeat;
     }
   }
+}
+.slider div {
+  border: none;
+  outline: none;
 }
 @media (max-width: 1100px) {
   .slider {
