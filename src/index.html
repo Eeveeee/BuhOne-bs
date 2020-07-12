@@ -7,7 +7,13 @@
     <!-- favicon  -->
     <link rel="shortcut icon" href="img/favicon/logo.ico" />
 
+    <!-- animate.css  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
     <!-- bootstrap  -->
+
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -34,7 +40,7 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="header__blocks">
+        <div class="header-wrap">
           <div class="row align-items-center">
             <div
               class="col-xs-12 col-md-4 d-flex justify-content-center align-items-center justify-content-sm-between"
@@ -49,31 +55,31 @@
 
             <div class="col-xs-12 col-md-8">
               <div class="header-contacts">
-                <div class="contacts__block">
+                <div class="header-contacts__block">
                   <img src="img/icons/smartphone.svg" alt="" />
                   <span>8 (111) 222-33-44</span>
                 </div>
-                <div class="contacts__block">
+                <div class="header-contacts__block">
                   <img src="img/icons/clock.svg" alt="" />
                   <span>Пн-Пт 10:00-18:00</span>
                 </div>
-                <div class="contacts__block">
+                <div class="header-contacts__block">
                   <img src="img/icons/mail.svg" alt="" />
                   <span>order@buhone.ru</span>
                 </div>
-                <div class="contacts__block">
+                <div class="header-contacts__block">
                   <img src="img/icons/map-mark.svg" alt="" />
                   <span>Невский пр. 130</span>
                 </div>
               </div>
               <!-- /.header-contacts -->
 
-              <nav class="header__navbar">
-                <a href="#" class="navbar__block">главная</a>
-                <a href="#" class="navbar__block">услуги</a>
-                <a href="#" class="navbar__block">кейсы</a>
-                <a href="#" class="navbar__block">о компании</a>
-                <a href="#" class="navbar__block">контакты</a>
+              <nav id="nav" class="header__navbar">
+                <a href="#one" class="navbar__block">главная</a>
+                <a href="#two" class="navbar__block">услуги</a>
+                <a href="#four" class="navbar__block">кейсы</a>
+                <a href="#four" class="navbar__block">о компании</a>
+                <a href="#five" class="navbar__block">контакты</a>
               </nav>
               <!-- /.header__navbar -->
             </div>
@@ -87,11 +93,11 @@
     </header>
     <!-- /.header -->
 
-    <section class="main">
+    <section class="main" id="one">
       <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="main__blocks">
+        <div class="main-wrap">
+          <div class="row">
+            <div class="col-12">
               <div class="slider main-slider">
                 <div class="slider__item">
                   <h1 class="main__header">
@@ -127,15 +133,14 @@
             <!-- /.main__blocks -->
           </div>
         </div>
-        <!-- /.row  -->
       </div>
       <!-- /.container -->
     </section>
     <!-- /.main -->
 
-    <section class="services">
+    <section class="services" id="two">
       <div class="container">
-        <div class="services__blocks">
+        <div class="services-wrap">
           <div class="row">
             <div class="col-lg-12">
               <div class="services__header">
@@ -206,23 +211,23 @@
           </div>
           <!-- /.row -->
         </div>
-        <!-- /.services__blocks -->
+        <!-- /.services-wrap -->
       </div>
       <!-- /.container -->
     </section>
     <!-- /.services -->
 
-    <section class="about">
+    <section class="about" id="four">
       <div class="container">
-        <div class="about__blocks">
+        <div class="about-wrap">
           <div class="row">
             <div class="col-lg-5 col-sm-12">
               <div class="about__text">
                 <span>О нас</span>
-                <h2 class="about__header">
+                <div class="about__header">
                   <span>Компания</span>
-                  ИвановПром
-                </h2>
+                  <h2>ИвановПром</h2>
+                </div>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
                   ab in enim numquam harum modi asperiores ad saepe blanditiis
@@ -264,7 +269,7 @@
           </div>
           <!-- /.row -->
         </div>
-        <!-- /.about__blocks -->
+        <!-- /.about-wrap -->
       </div>
       <!-- /.container -->
     </section>
@@ -272,7 +277,7 @@
 
     <section class="clients">
       <div class="container">
-        <div class="clients__blocks">
+        <div class="clients-wrap">
           <div class="row">
             <div class="col-md-12">
               <div class="clients__header">
@@ -366,7 +371,7 @@
 
     <section class="reviews">
       <div class="container">
-        <div class="reviews__blocks">
+        <div class="reviews-wrap">
           <div class="row">
             <div class="col-lg-12">
               <div class="reviews__header">
@@ -480,9 +485,9 @@
     </section>
     <!-- /.reviews -->
 
-    <section class="contacts">
+    <section class="contacts" id="five">
       <div class="container">
-        <div class="contacts__blocks">
+        <div class="contacts-wrap">
           <div class="row">
             <div class="col-lg-5 col-md-12 col-xs-12">
               <div class="contacts-info">
@@ -549,7 +554,7 @@
                   <span>Сообщение</span>
                   <textarea
                     name=""
-                    id=""
+                    href="#"
                     cols="30"
                     rows="10"
                     placeholder="Ваше сообщение"
@@ -593,5 +598,6 @@
 
     <!-- js  -->
     <script src="js/slider.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

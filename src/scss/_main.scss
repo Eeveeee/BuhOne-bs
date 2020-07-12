@@ -1,4 +1,5 @@
 .main {
+  margin-top: 107px;
   z-index: 1;
   position: relative;
   background: url(../img/main/background.webp) center no-repeat;
@@ -13,7 +14,7 @@
     bottom: 0;
     background: rgba(0, 0, 0, 0.6);
   }
-  &__blocks {
+  &-wrap {
     padding: 170px 0 113px 0;
     position: relative;
     z-index: 3;
@@ -37,7 +38,7 @@
     &__header {
       font-size: 30px;
     }
-    &__blocks {
+    &-wrap {
       padding: 70px 0 70px 0;
     }
   }

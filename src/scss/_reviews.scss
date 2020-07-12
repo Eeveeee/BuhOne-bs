@@ -1,5 +1,5 @@
 .reviews {
-  &__blocks {
+  &-wrap {
     padding: 140px 0;
   }
   &__header {
@@ -98,7 +98,7 @@
 }
 @media (max-width: 480px) {
   .reviews {
-    &__blocks {
+    &-wrap {
       padding: 50px 0;
     }
     &-slider {

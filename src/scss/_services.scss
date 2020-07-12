@@ -1,6 +1,6 @@
 .services {
   background: $background-color-grey;
-  &__blocks {
+  &-wrap {
     padding: 140px 0;
   }
   &__header {
@@ -45,7 +45,7 @@
 }
 @media (max-width: 480px) {
   .services {
-    &__blocks {
+    &-wrap {
       padding: 80px 0;
     }
     &__header {

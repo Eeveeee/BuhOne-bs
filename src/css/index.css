@@ -324,11 +324,16 @@ h2 {
 }
 
 .header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.25);
+  z-index: 1000;
   user-select: none;
   background: #f9f9f9;
 }
 
-.header__blocks {
+.header-wrap {
   padding: 22px 0 31px 0;
   font-family: "Lato", sans-serif;
 }
@@ -352,12 +357,12 @@ h2 {
   max-width: 680px;
 }
 
-.header-contacts .contacts__block {
+.header-contacts__block {
   display: flex;
   align-items: center;
 }
 
-.header-contacts .contacts__block img {
+.header-contacts__block img {
   margin-right: 10px;
 }
 
@@ -388,7 +393,7 @@ h2 {
   .header__label {
     margin-bottom: 10px;
   }
-  .header__blocks {
+  .header-wrap {
     padding: 18px 0 18px 0;
   }
   .header-contacts {
@@ -400,6 +405,7 @@ h2 {
 }
 
 .main {
+  margin-top: 107px;
   z-index: 1;
   position: relative;
   background: url(../img/main/background.webp) center no-repeat;
@@ -417,7 +423,7 @@ h2 {
   background: rgba(0, 0, 0, 0.6);
 }
 
-.main__blocks {
+.main-wrap {
   padding: 170px 0 113px 0;
   position: relative;
   z-index: 3;
@@ -442,7 +448,7 @@ h2 {
   .main__header {
     font-size: 30px;
   }
-  .main__blocks {
+  .main-wrap {
     padding: 70px 0 70px 0;
   }
 }
@@ -451,7 +457,7 @@ h2 {
   background: #ebebeb;
 }
 
-.services__blocks {
+.services-wrap {
   padding: 140px 0;
 }
 
@@ -500,7 +506,7 @@ h2 {
 }
 
 @media (max-width: 480px) {
-  .services__blocks {
+  .services-wrap {
     padding: 80px 0;
   }
   .services__header {
@@ -513,7 +519,7 @@ h2 {
   }
 }
 
-.about__blocks {
+.about-wrap {
   padding: 140px 0 110px 0;
 }
 
@@ -531,11 +537,14 @@ h2 {
 
 .about__header {
   margin-bottom: 60px;
-  color: #005fa3;
 }
 
 .about__header span {
   color: #333333;
+}
+
+.about__header h2 {
+  color: #005fa3;
 }
 
 .about__cards {
@@ -593,7 +602,7 @@ h2 {
   .about__header {
     margin-bottom: 30px;
   }
-  .about__blocks {
+  .about-wrap {
     padding: 50px 0 30px 0;
   }
   .about__text {
@@ -623,7 +632,7 @@ h2 {
   background: #ebebeb;
 }
 
-.clients__blocks {
+.clients-wrap {
   padding: 100px 0;
 }
 
@@ -682,7 +691,7 @@ h2 {
   }
 }
 
-.reviews__blocks {
+.reviews-wrap {
   padding: 140px 0;
 }
 
@@ -785,7 +794,7 @@ h2 {
 }
 
 @media (max-width: 480px) {
-  .reviews__blocks {
+  .reviews-wrap {
     padding: 50px 0;
   }
   .reviews-slider {
@@ -820,7 +829,7 @@ h2 {
   background: rgba(0, 0, 0, 0.8);
 }
 
-.contacts__blocks {
+.contacts-wrap {
   position: relative;
   z-index: 3;
   padding: 120px 0;
@@ -921,7 +930,7 @@ h2 {
 }
 
 @media (max-width: 768px) {
-  .contacts__blocks {
+  .contacts-wrap {
     padding: 60px 0;
   }
   .contacts-info {
