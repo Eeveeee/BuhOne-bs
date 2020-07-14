@@ -388,6 +388,63 @@ textarea {
   }
 }
 
+.burger-menu {
+  display: none;
+  position: fixed;
+  left: 5%;
+  z-index: 100000;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border-radius: 50%;
+  border: 1px solid #005fa3;
+}
+
+.burger-menu span,
+.burger-menu span::before,
+.burger-menu span::after {
+  position: absolute;
+  margin-top: -1px;
+  margin-left: -10px;
+  top: 50%;
+  left: 50%;
+  background: #005fa3;
+  width: 20px;
+  height: 2px;
+}
+
+.burger-menu span::before,
+.burger-menu span::after {
+  transition: 0.4s;
+  content: "";
+}
+
+.burger-menu span::before {
+  transform: translateY(-5px);
+}
+
+.burger-menu span::after {
+  transform: translateY(5px);
+}
+
+.burger-active span::before {
+  transform: rotate(145deg);
+}
+
+.burger-active span::after {
+  transform: rotate(-145deg);
+}
+
+.burger-active span {
+  height: 0;
+}
+
+@media (max-width: 480px) {
+  .burger-menu {
+    display: block;
+  }
+}
+
 .container {
   margin: 0 auto;
   max-width: 1116px;
@@ -509,6 +566,9 @@ h2 {
   .slider .slick-next:hover {
     background: rgba(255, 255, 255, 0.2) url(../img/icons/arrow-next.svg) center no-repeat;
   }
+  .slider .slick-dots {
+    padding-left: 40px;
+  }
   .slider .slick-dots li {
     width: 20px;
     height: 20px;
@@ -524,6 +584,9 @@ h2 {
   .slider__item {
     text-align: center;
   }
+  .slider .slick-dots {
+    padding-left: 0;
+  }
   .slider .slick-dots li {
     margin-left: 15px;
   }
@@ -534,11 +597,10 @@ h2 {
 }
 
 .header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.25);
   z-index: 1000;
+  position: fixed;
+  top: 0;
+  width: 100%;
   user-select: none;
   background: #f9f9f9;
 }
@@ -609,13 +671,29 @@ h2 {
   .header-contacts {
     display: none;
   }
+}
+
+@media (max-width: 480px) {
+  .header__label {
+    margin-bottom: 0;
+  }
   .header__navbar {
-    justify-content: space-around;
+    width: 100vw;
+    transition: 0.3s;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    align-items: center;
+    justify-content: space-evenly;
+    top: 0;
+    left: -100vw;
+    z-index: 100;
+    position: fixed;
+    flex-direction: column;
   }
 }
 
 .main {
-  margin-top: 107px;
+  margin-top: 100px;
   z-index: 1;
   position: relative;
   background: url(../img/main/background.webp) center no-repeat;
