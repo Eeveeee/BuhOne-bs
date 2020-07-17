@@ -34,10 +34,10 @@
 }
 .burger-active {
   span::before {
-    transform: rotate(145deg);
+    transform: rotate(138deg);
   }
   span::after {
-    transform: rotate(-145deg);
+    transform: rotate(-138deg);
   }
   span {
     height: 0;

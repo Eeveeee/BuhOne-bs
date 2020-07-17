@@ -428,11 +428,11 @@ textarea {
 }
 
 .burger-active span::before {
-  transform: rotate(145deg);
+  transform: rotate(138deg);
 }
 
 .burger-active span::after {
-  transform: rotate(-145deg);
+  transform: rotate(-138deg);
 }
 
 .burger-active span {
@@ -693,7 +693,7 @@ h2 {
 }
 
 .main {
-  margin-top: 100px;
+  margin-top: 80px;
   z-index: 1;
   position: relative;
   background: url(../img/main/background.webp) center no-repeat;
