@@ -22,7 +22,9 @@
     z-index: 1;
     width: 350px;
     height: 360px;
-    background: url(../img/services/background.jpg);
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
     &::after {
       z-index: 2;
       position: absolute;

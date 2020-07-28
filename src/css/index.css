@@ -474,8 +474,14 @@ h2 {
   }
 }
 
+b {
+  font-weight: 900;
+  font-size: 19px;
+}
+
 .slick-track {
   display: flex;
+  align-items: center;
 }
 
 .slick-list {
@@ -526,6 +532,11 @@ h2 {
   user-select: none;
   border: none;
   outline: none;
+}
+
+.slider__item {
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .slider .slick-prev {
@@ -585,10 +596,15 @@ h2 {
     text-align: center;
   }
   .slider .slick-dots {
+    max-width: none;
+    width: auto;
     padding-left: 0;
   }
   .slider .slick-dots li {
     margin-left: 15px;
+  }
+  .slider .slick-dots li:first-child {
+    margin: 0;
   }
   .slider .slick-dots button {
     width: 20px;
@@ -720,7 +736,7 @@ h2 {
 .main__header {
   margin-bottom: 80px;
   color: #ffffff;
-  max-width: 589px;
+  max-width: 650px;
   font-style: normal;
   line-height: 66px;
   font-size: 48px;
@@ -770,7 +786,9 @@ h2 {
   z-index: 1;
   width: 350px;
   height: 360px;
-  background: url(../img/services/background.jpg);
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
 }
 
 .services__card::after {
@@ -846,7 +864,7 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0px 100px 0 40px;
+  padding: 0px 40px 0 40px;
   font-weight: 700;
   width: 255px;
   height: 255px;
@@ -939,6 +957,14 @@ h2 {
   margin-top: 60px;
 }
 
+.clients-slider__item {
+  margin-left: 15px;
+  margin-right: 15px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
 .clients-slider .slick-dots button {
   background: rgba(0, 95, 163, 0.4);
 }
@@ -976,6 +1002,12 @@ h2 {
   }
   .clients-slider .slick-prev:hover {
     background: #005fa3 url(../img/icons/arrow-back.svg) center no-repeat !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .clients-slider .slider__item {
+    margin: 0;
   }
 }
 
@@ -1028,6 +1060,7 @@ h2 {
 }
 
 .reviews-slider .slider__item {
+  height: 333px;
   padding: 35px;
   display: flex;
   flex-direction: column;
@@ -1051,8 +1084,10 @@ h2 {
 }
 
 .reviews-slider .slider__item .reviews__client .client-img-wrap {
+  border-radius: 50%;
   width: 80px;
   height: 80px;
+  overflow: hidden;
 }
 
 .reviews-slider .slider__item .reviews__client .client-info {
@@ -1069,6 +1104,9 @@ h2 {
 @media (max-width: 768px) {
   .reviews__header {
     text-align: center;
+  }
+  .reviews-slider .slider__item {
+    height: 400px;
   }
   .reviews-slider .slick-prev {
     right: 8.1%;
@@ -1088,7 +1126,18 @@ h2 {
   .reviews-slider {
     margin-top: 40px;
   }
+  .reviews-slider .slick-track {
+    align-items: start;
+  }
+  .reviews-slider .slick-list {
+    margin-bottom: 5px !important;
+  }
+  .reviews-slider .slider__item {
+    height: auto;
+    justify-content: flex-start;
+  }
   .reviews-slider .slider__item p {
+    order: 2;
     margin-bottom: 20px;
   }
   .reviews-slider .slick-list {
@@ -1096,6 +1145,7 @@ h2 {
   }
   .reviews__client {
     flex-direction: column;
+    order: 1;
   }
 }
 

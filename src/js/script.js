@@ -2,7 +2,7 @@ const nav = document.getElementById("nav");
 const burgerMenu = document.querySelector(".burger-menu");
 
 function widthCheck() {
-  if (document.documentElement.clientWidth >= 480) return;
+  if (document.documentElement.clientWidth >= 480) return 0;
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -15,7 +15,9 @@ document.addEventListener("DOMContentLoaded", () => {
         block: "start",
         behavior: "smooth",
       });
-      widthCheck();
+      if (widthCheck()) {
+        return;
+      }
       nav.style.left = "-100vw";
       burgerMenu.classList.toggle("burger-active");
     }
@@ -23,9 +25,10 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 burgerMenuClick();
-
 function burgerMenuClick() {
-  widthCheck();
+  if (widthCheck()) {
+    return;
+  }
   nav.style.left = "-100vw";
   burgerMenu.addEventListener("click", (e) => {
     e.preventDefault();

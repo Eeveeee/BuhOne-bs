@@ -28,6 +28,8 @@ $(document).ready(function () {
         breakpoint: 480,
         settings: {
           arrows: false,
+          slidesToShow: 2,
+          slidesToScroll: 2,
         },
       },
     ],

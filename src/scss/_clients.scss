@@ -14,6 +14,13 @@
   &-slider {
     position: relative;
     margin-top: 60px;
+    &__item {
+      margin-left: 15px;
+      margin-right: 15px;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+    }
     .slick-dots {
       button {
         background: rgba($color: $main-blue, $alpha: 0.4);
@@ -56,6 +63,15 @@
         &:hover {
           background: $main-blue url(../img/icons/arrow-back.svg) center no-repeat !important;
         }
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .clients {
+    &-slider {
+      .slider__item {
+        margin: 0;
       }
     }
   }
