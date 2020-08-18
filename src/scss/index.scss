@@ -1,41 +1,14 @@
-@import "_reset.scss";
 @import "_variables.scss";
 @import "_buttons.scss";
 @import "_burger.scss";
-.container {
-  margin: 0 auto;
-  max-width: 1116px;
-}
-.container {
-  outline: none !important;
-}
-body {
-  font-family: $font-lato;
-  font-weight: 700;
-  font-style: normal;
-  font-weight: normal;
-}
-h2 {
-  font-size: 48px;
-  font-weight: 900;
-  font-family: $font-merriweather;
-  color: $header-color;
-}
-@media (max-width: 480px) {
-  h2 {
-    font-size: 24px;
-  }
-}
-b {
-  font-weight: 900;
-  font-size: 19px;
-}
-@import "_slider.scss";
-@import "_header.scss";
-@import "_main.scss";
-@import "_services.scss";
-@import "_about.scss";
-@import "_clients.scss";
-@import "_reviews.scss";
-@import "_contacts.scss";
-@import "_footer.scss";
+@import "starter";
+
+@import "slider.scss";
+@import "header.scss";
+@import "main.scss";
+@import "services.scss";
+@import "about.scss";
+@import "clients.scss";
+@import "reviews.scss";
+@import "contacts.scss";
+@import "footer.scss";

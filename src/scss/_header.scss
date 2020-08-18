@@ -45,6 +45,14 @@
     text-transform: uppercase;
     a {
       color: $main-blue;
+      height: 25px;
+      border-bottom: 2px solid transparent;
+      transition: 0.4s;
+
+      &:hover {
+        border-bottom: 2px solid $main-blue;
+        transition: 0.4s;
+      }
     }
   }
 }
