@@ -48,7 +48,8 @@
     font-size: 20px;
   }
   &-img-wrap {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     width: 40px;
     max-height: 30px;
   }

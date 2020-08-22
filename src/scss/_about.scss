@@ -92,6 +92,7 @@
       text-align: center;
       padding: 0;
       &:hover {
+        transform: none;
         color: $text-color-dark !important;
         background: $background-color-grey;
         a {

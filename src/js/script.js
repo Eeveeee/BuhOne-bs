@@ -33,17 +33,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
 burgerMenuClick()
 function burgerMenuClick() {
-  if (widthCheck()) {
-    return false
-  }
   nav.style.left = '-100vw'
   burgerMenu.addEventListener('click', (e) => {
+    e.preventDefault()
     if (burgerMenu.classList.contains('burger-active')) {
       scrollState(true)
     } else {
       scrollState(false)
     }
-    e.preventDefault()
+    if (widthCheck()) {
+      return false
+    }
     burgerMenu.classList.toggle('burger-active')
     nav.style.left = nav.style.left === '-100vw' ? 0 : '-100vw'
   })
